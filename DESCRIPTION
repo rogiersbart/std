@@ -1,0 +1,26 @@
+Package: std
+Title: A simple modern interface to the standard streams
+Version: 0.0.0.9000
+Authors@R:
+    c(
+        person(
+            given = "Bart",
+            family = "Rogiers",
+            email = "bart.rogiers@sckcen.be",
+            role = c("cre", "aut"),
+            comment = c(
+              ORCID = "0000-0002-8836-0988",
+              url = "<https://rogiersbart.github.io>"
+            )
+        ),
+        person("SCK CEN", role = c("cph", "fnd"))
+    )
+Description:
+    This package provides wrappers around different {cli} functions to easily
+    work with simple in- and output from/to the standard streams.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    cli
