@@ -1,0 +1,17 @@
+home:
+  title: The {std} R package
+  description: A simple modern interface to the standard streams
+url: https://rogiersbart.github.io/std
+authors:
+  Bart Rogiers:
+    href: https://rogiersbart.github.io
+  SCK CEN:
+    href: https://www.sckcen.be
+navbar:
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+  structure:
+    left:  [home, intro, articles, tutorials, reference, news]
+    right: [search, github]
