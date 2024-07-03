@@ -68,10 +68,12 @@ tell <- function(..., .envir = parent.frame(), capture = FALSE) {
 msg_done <- NULL
 msg_failed <- NULL
 begin <- function(..., .envir = parent.frame()) {
-  cli::cli_div(theme = theme())
-  cli::cli_progress_message(paste0("{cli::col_yellow('~')} ",
-                                   paste(...), " ..."),
-                            .envir = .envir)
+  if (interactive()) {
+    cli::cli_div(theme = theme())
+    cli::cli_progress_message(paste0("{cli::col_yellow('~')} ",
+                                     paste(...), " ..."),
+                              .envir = .envir)
+  }
   assignInNamespace(
     "msg_done",
     paste0("{cli::col_green('v')} ", paste(...), " ... done"),
