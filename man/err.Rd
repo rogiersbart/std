@@ -4,7 +4,7 @@
 \alias{err}
 \title{Access the standard error stream}
 \usage{
-err(..., .envir = parent.frame())
+err(...)
 }
 \arguments{
 \item{...}{Character vectors supporting \strong{glue} strings and \strong{cli} inline
@@ -14,8 +14,6 @@ of the {rui} verbs. Otherwise, \code{rui::tell()} is used. Supported prefixes ar
 (give), * (suggest), ? (ask), ! (alert), w (warn), e (stop), . (display), and
 $ (expose). Status bars can be resolved by providing single characters "c",
 "v", or "x" for clear, succeed and fail respectively.}
-
-\item{object}{Object to print the {rui} way through \code{rui::inspect()}.}
 }
 \description{
 This function provides an alternative to the verb-based API, by mapping the

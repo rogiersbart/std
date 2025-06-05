@@ -1,11 +1,14 @@
 # TODO
-# - [ ] Refactor multi-line feedback into single function
-# - Improve object inspection performance
-# - Add `out()` and `in()` to complete streams functionality
-#
-
-# FIXME
-#
+# - put yellow ? as prefix here always?
+# - then use actual user-provided prefix for type?
+#   i = integer
+#   n/r/d = double
+#   c = character
+# - std::in("i How many exercises do you want to do?")
+# - maybe also consider prefix for n entries? ix5?
+#   or for inf entries ixn? for which the user needs to abort input?
+#   dont remember now how?
+# - this would then be consistent to std::err()
 
 # ask <- function(..., .demo = FALSE) {
 #   # NOTE this is based on usethis$ui_yeah, but uses text symbols only for
